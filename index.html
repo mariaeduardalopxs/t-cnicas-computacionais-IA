@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050810">
+  <meta name="description" content="Jogo educativo sobre inteligência artificial, ética e o futuro da escola.">
+  <title>Você Decide o Futuro da IA</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Página inicial">IA<span> // FUTURO</span></a>
+    <span class="tag">PROJETO EDUCACIONAL</span>
+  </header>
+
+  <main>
+    <section id="intro" class="screen">
+      <p class="eyebrow">Uma experiência interativa</p>
+      <h1>Você decide o <span>futuro da IA</span></h1>
+      <p class="lead">
+        A inteligência artificial está transformando o mundo.
+        Mas como devemos utilizá-la? Suas escolhas podem fazer
+        a diferença.
+      </p>
+
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="core">IA</div>
+      </div>
+
+      <div class="intro-card">
+        <h2>Uma missão começa agora.</h2>
+        <p>
+          Enfrente cinco desafios sobre inteligência artificial
+          na escola, privacidade, ética e pensamento crítico.
+          Analise cada situação e decida qual caminho seguir.
+        </p>
+      </div>
+
+      <div class="stats">
+        <span>◈ 05 desafios</span>
+        <span>◈ Escolhas interativas</span>
+        <span>◈ Resultado personalizado</span>
+      </div>
+
+      <button id="start-btn" class="primary">
+        INICIAR MISSÃO <span>→</span>
+      </button>
+      <p class="note">Conhecimento • Ética • Responsabilidade</p>
+    </section>
+
+    <section id="game" class="screen hidden" aria-live="polite">
+      <p id="category" class="eyebrow">DESAFIO 01</p>
+
+      <div class="progress-info">
+        <span id="counter">Desafio 1 de 5</span>
+        <span id="score">Pontos: 0</span>
+      </div>
+
+      <div class="progress-track">
+        <div id="progress-bar" class="progress-bar"></div>
+      </div>
+
+      <h2 id="question">Carregando desafio...</h2>
+
+      <div class="scenario">
+        <span class="scenario-label">SITUAÇÃO</span>
+        <p id="story"></p>
+      </div>
+
+      <p class="question-label">Qual é a sua decisão?</p>
+      <div id="choices" class="choices"></div>
+
+      <div id="feedback" class="feedback hidden" aria-live="polite">
+        <h3 id="feedback-title"></h3>
+        <p id="feedback-text"></p>
+        <button id="next-btn" class="primary">PRÓXIMO DESAFIO →</button>
+      </div>
+    </section>
+
+    <section id="result" class="screen hidden" aria-live="polite">
+      <p class="eyebrow">MISSÃO CONCLUÍDA</p>
+      <h1 id="result-title">O futuro está em suas mãos.</h1>
+      <p id="result-description"></p>
+
+      <div class="score-panel">
+        <span>SUA PONTUAÇÃO</span>
+        <strong id="final-score">0/100</strong>
+        <div class="progress-track">
+          <div id="final-bar" class="progress-bar"></div>
+        </div>
+      </div>
+
+      <div class="result-card">
+        <h3>O que aprendemos?</h3>
+        <p>
+          A IA pode apoiar a educação e a criatividade, mas seu
+          uso exige pensamento crítico, proteção de dados,
+          verificação das informações e responsabilidade humana.
+        </p>
+      </div>
+
+      <div class="result-card">
+        <h3>Seu próximo passo</h3>
+        <p id="result-message"></p>
+      </div>
+
+      <button id="restart-btn" class="primary">
+        ↻ JOGAR NOVAMENTE
+      </button>
+      <button id="home-btn" class="secondary">
+        VOLTAR AO INÍCIO
+      </button>
+    </section>
+  </main>
+
+  <footer>
+    <p>VOCÊ DECIDE O FUTURO DA IA</p>
+    <span>Um projeto educacional sobre tecnologia e responsabilidade.</span>
+  </footer>
+</body>
+</html>
